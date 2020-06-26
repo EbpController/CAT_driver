@@ -1,6 +1,6 @@
 // this project is part of the 'EBP controller' solution
 //
-// the interface detects the hall sensors and sends information on the 'TFM daisy chain' bus
+// the interface detects the hall sensors and sends information on the 'EBP serial' bus
 // a maximum of 6 detectors (= 12 hall sensors) can be controlled
 // each detector exist of 2 hall sensors (sensor A and sensor B)
 // the 6 A-sensors are connected to Port D bit 2 to bit 7 (for detector 0 to 5)
@@ -73,7 +73,7 @@ void setup()
 
 void loop()
 {
-  // poll TFM daisy chain bus
+  // poll EBP serial bus
   EbpSerial.poll();
 
   // poll hall sensors
