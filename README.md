@@ -1,5 +1,7 @@
 # CAT_driver
-'CAT driver' is a driver for the 'EBP Controller' project
+'CAT driver' is an Arduino Uno/Nano Hall-sensor (detector) driver for the 'EBP Controller' project
+
+The 10-bit address is composed as follow: 0b0000 (fixed value) + reversed value of port C bit 0 to bit 5 (e.g. pin A0 to GND makes address = 1)
 
 EbpSerial must be included (refer to https://github.com/EbpController/EbpSerial)
 
